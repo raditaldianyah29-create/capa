@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>For capa ♡</title>
+<link rel="stylesheet" href="style.css">
+
+<style>
+
+/* =========================
+   PASSWORD SCREEN
+========================= */
+
+#passwordScreen{
+    position:fixed;
+    inset:0;
+    z-index:999999;
+    background:#09070d;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    opacity:1;
+    visibility:visible;
+    transition:opacity .8s ease;
+}
+
+.password-content{
+    width:90%;
+    max-width:360px;
+}
+
+.password-flower{
+    font-size:42px;
+    margin-bottom:20px;
+}
+
+.password-content h1{
+    color:#fff;
+    font-family:Georgia,serif;
+    font-size:28px;
+    font-weight:normal;
+    margin:0 0 10px;
+}
+
+.password-content h1 i{
+    color:#e9a8c5;
+}
+
+.password-content p{
+    color:#aaa;
+    font-size:13px;
+    font-style:italic;
+    margin-bottom:25px;
+}
+
+#passwordInput{
+    width:80%;
+    padding:13px 18px;
+    border-radius:30px;
+    border:1px solid rgba(255,255,255,.25);
+    outline:none;
+    background:rgba(255,255,255,.06);
+    color:white;
+    text-align:center;
+    font-size:14px;
+}
+
+#passwordInput::placeholder{
+    color:#777;
+}
+
+#passwordButton{
+    margin-top:13px;
+    padding:12px 30px;
+    border:0;
+    border-radius:30px;
+    background:#c8789d;
+    color:white;
+    cursor:pointer;
+    font-size:13px;
+}
+
+#passwordError{
+    min-height:18px;
+    margin-top:12px;
+    color:#e9a1bd;
+    font-size:12px;
+}
+
+#mainWebsite{
+    display:none;
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- =========================
+     PASSWORD
+========================= -->
+
+<div id="passwordScreen">
+
+    <div class="password-content">
+
+        <div class="password-flower">
+            🌸
+        </div>
+
+        <h1>
+            For <i>You</i> ♡
+        </h1>
+
+        <p>
+            Siapa Yahhh
+        </p>
+
+        <input
+            type="password"
+            id="passwordInput"
+            placeholder="orang yang di sayang adit"
+            autocomplete="off"
+        >
+
+        <br>
+
+        <button id="passwordButton">
+            Buka ♡
+        </button>
+
+        <div id="passwordError"></div>
+
+    </div>
+
+</div>
+
+
+<!-- =========================
+     WEBSITE UTAMA
+========================= -->
+
+<div id="mainWebsite">
+
+<audio id="music" autoplay loop>
+    <source src="lagu.mp3" type="audio/mpeg">
+</audio>
+
+<button id="musicBtn">♫</button>
+
+<div id="petals"></div>
+
+<section class="opening" id="opening">
+
+    <div class="opening-content">
+
+        <div class="gift" id="gift">
+
+            <div class="gift-lid">
+
+                <div class="bow">
+                    <span class="bow-left"></span>
+                    <span class="bow-right"></span>
+                    <span class="bow-center"></span>
+                </div>
+
+            </div>
+
+            <div class="gift-box">
+                <div class="ribbon vertical"></div>
+                <div class="ribbon horizontal"></div>
+            </div>
+
+        </div>
+
+        <h1>
+            For You, My <i>Everything</i>
+        </h1>
+
+        <p class="intro-text">
+            Untuk kamu yang selalu membuatku bangga dan sangat berarti bagiku.
+        </p>
+
+        <div class="bottom-flowers">
+            <span>🌸</span>
+            <span>🌹</span>
+            <span>🌼</span>
+        </div>
+
+    </div>
+
+</section>
+
+
+<section class="letter page">
+
+    <div class="line"></div>
+
+    <div class="label">
+        SURAT DARI HATIKU
+    </div>
+
+    <h2>
+        Aku sangat bangga padamu,<br>
+        dan aku sangat menyayangimu<br>
+        lebih dari yang bisa kukatakan.
+    </h2>
+
+    <div class="letter-text">
+
+        <p>
+            Capa, mungkin aku tidak selalu pandai
+            menunjukkan apa yang sebenarnya aku rasakan.
+            Tapi aku ingin kamu tahu bahwa aku benar-benar
+            bangga padamu. Aku bangga dengan dirimu,
+            dengan caramu terus berusaha, dan dengan
+            setiap langkah yang kamu ambil.
+        </p>
+
+        <p>
+            Aku sangat menyayangimu. Bukan hanya saat
+            semuanya berjalan dengan baik, tapi juga saat
+            kamu sedang lelah, sedih, bingung, atau merasa
+            semuanya terlalu berat. Buatku, kamu tetap
+            seseorang yang sangat berharga.
+        </p>
+
+    </div>
+
+</section>
+
+
+<section class="love page">
+
+    <div class="line"></div>
+
+    <div class="label">
+        WHY I LOVE YOU
+    </div>
+
+    <h2>
+        Why I <i>Love You</i>
+    </h2>
+
+    <div class="love-card">
+        <div class="love-icon">🌹</div>
+        <h3>Your Smile</h3>
+        <p>Senyummu selalu menjadi salah satu hal yang paling aku suka darimu.</p>
+    </div>
+
+    <div class="love-card">
+        <div class="love-icon">✨</div>
+        <h3>Your Heart</h3>
+        <p>Aku menyayangi ketulusan dan hati baik yang ada dalam dirimu.</p>
+    </div>
+
+    <div class="love-card">
+        <div class="love-icon">🌺</div>
+        <h3>Your Soul</h3>
+        <p>Ada banyak hal tentang dirimu yang membuatku semakin menyayangimu.</p>
+    </div>
+
+    <div class="love-card">
+        <div class="love-icon">🌷</div>
+        <h3>Your Strength</h3>
+        <p>Aku bangga melihatmu terus berusaha meskipun tidak selalu mudah.</p>
+    </div>
+
+</section>
+
+
+<section class="garden page">
+
+    <div class="line"></div>
+
+    <div class="label">
+        SECRET GARDEN
+    </div>
+
+    <h2>
+        A Garden Grown <i>Just For You</i>
+    </h2>
+
+    <div class="garden-grid">
+
+        <div class="garden-card">
+            <span>🌹</span>
+            <p>Senyummu</p>
+        </div>
+
+        <div class="garden-card">
+            <span>🌸</span>
+            <p>Kebaikanmu</p>
+        </div>
+
+        <div class="garden-card">
+            <span>🪷</span>
+            <p>Ketulusanmu</p>
+        </div>
+
+        <div class="garden-card">
+            <span>🌺</span>
+            <p>Keindahan Hatimu</p>
+        </div>
+
+        <div class="garden-card">
+            <span>🌼</span>
+            <p>Perjuanganmu</p>
+        </div>
+
+        <div class="garden-card">
+            <span>🌷</span>
+            <p>Dirimu</p>
+        </div>
+
+    </div>
+
+</section>
+
+
+<section class="pictures page">
+
+    <div class="line"></div>
+
+    <div class="label">
+        MEMORIES
+    </div>
+
+    <h2>
+        Tentang Kamu yang <i>Aku Sayangi</i>
+    </h2>
+
+    <div class="photos">
+
+        <div class="photo"><img src="foto1.jpg"></div>
+        <div class="photo"><img src="foto2.jpg"></div>
+        <div class="photo"><img src="foto3.jpg"></div>
+        <div class="photo"><img src="foto4.jpg"></div>
+        <div class="photo"><img src="foto5.jpg"></div>
+        <div class="photo"><img src="foto6.jpg"></div>
+       
+
+    </div>
+
+</section>
+
+
+<section class="ending page">
+
+    <div class="label">
+        FOR CAPA
+    </div>
+
+    <h2>
+        Aku bangga padamu,<br>
+        <i>dan sangat menyayangimu.</i>
+    </h2>
+
+    <div class="heart">
+        ♡
+    </div>
+
+    <p>
+        Setiap bunga, setiap kata,
+        dan setiap detail kecil di sini
+        dibuat untuk mengingatkanmu
+        betapa berartinya kamu bagiku.
+    </p>
+
+</section>
+
+</div>
+
+
+<!-- =========================
+     PASSWORD SCRIPT
+========================= -->
+
+<script>
+
+const passwordInput = document.getElementById("passwordInput");
+const passwordButton = document.getElementById("passwordButton");
+const passwordScreen = document.getElementById("passwordScreen");
+const passwordError = document.getElementById("passwordError");
+const mainWebsite = document.getElementById("mainWebsite");
+
+function bukaWebsite(){
+
+    if(passwordInput.value.toLowerCase() === "capa"){
+
+        passwordError.textContent = "";
+
+        mainWebsite.style.display = "block";
+
+        passwordScreen.style.opacity = "0";
+
+        setTimeout(function(){
+
+            passwordScreen.remove();
+
+            const script = document.createElement("script");
+
+            script.src = "script.js";
+
+            script.onload = function(){
+
+                /* KADO LANGSUNG TERBUKA */
+                openGift();
+
+            };
+
+            document.body.appendChild(script);
+
+        },800);
+
+    }else{
+
+        passwordError.textContent = "gakenal hush hushh";
+
+        passwordInput.value = "";
+
+        passwordInput.focus();
+
+    }
+
+}
+
+passwordButton.addEventListener("click", bukaWebsite);
+
+passwordInput.addEventListener("keydown", function(event){
+
+    if(event.key === "Enter"){
+        bukaWebsite();
+    }
+
+});
+
+</script>
+
+</body>
+</html>
