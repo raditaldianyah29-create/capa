@@ -394,6 +394,12 @@ function bukaWebsite(){
 
         mainWebsite.style.display = "block";
 
+        /* AUTO PLAY MUSIK SAAT TOMBOL BUKA DIKLIK */
+        const music = document.getElementById("music");
+        music.play().catch(function(){
+            console.log("Autoplay diblokir browser.");
+        });
+
         passwordScreen.style.opacity = "0";
 
         setTimeout(function(){
